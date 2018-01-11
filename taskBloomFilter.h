@@ -14,10 +14,10 @@
 
 void getHashValue_bloomFilter(struct flowTuple *flow, uint32 *index_hash);
 
-void intialBloomFilter(uint8 *bloomFilter);
+void intialBloomFilter(uint8 **bloomFilter);
 
 // '1' is hit, '0' in mis;
-int lookupBloomFilter(struct flowTuple *flow, uint8 *bloomFilter);
+int lookupBloomFilter(struct flowTuple *flow, uint8 **bloomFilter);
 
 
 #endif
