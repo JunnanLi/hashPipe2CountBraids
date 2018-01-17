@@ -37,7 +37,7 @@
 	2^24 	16777216
 */
 
-#define TIME_USEC	1100000			// epoch interval
+#define TIME_USEC	9900000			// epoch interval
 
 //1100000
 //3300000
@@ -45,19 +45,19 @@
 //9900000
 
 //================HashPipe parameter================//
-#define TOP_K 4
-#define NUM_HASHPIPE_STAGE 2 		// hashPipe stages
-#define BIT_HASH_INDEX_HASHPIPE 2		// used to calculate hash value iteratively
-#define NUM_HASHPIPE_ENTRY 2		// entry number
-#define REMINDER_HP 2			// used by hash function
+#define TOP_K 300
+#define NUM_HASHPIPE_STAGE 5 		// hashPipe stages
+#define BIT_HASH_INDEX_HASHPIPE 10		// used to calculate hash value iteratively
+#define NUM_HASHPIPE_ENTRY 1024		// entry number
+#define REMINDER_HP 1024			// used by hash function
 #define MAX_ENTRY NUM_HASHPIPE_ENTRY*NUM_HASHPIPE_STAGE
 #define HASH_MASK_HASHPIPE NUM_HASHPIPE_ENTRY-1
 
 //================bloomFilter================//
-#define BIT_HASH_INDEX_BLOOMFILTER 22
-#define NUM_BLOOMFILTER_HASH 3
-#define NUM_BLOOMFILTER 4194304
-#define REMINDER_BF 2796202
+#define BIT_HASH_INDEX_BLOOMFILTER 24
+#define NUM_BLOOMFILTER_HASH 4
+#define NUM_BLOOMFILTER 16777216
+#define REMINDER_BF 16777216
 #define HASH_MASK_BLOOMFILTER NUM_BLOOMFILTER-1
 
 

@@ -24,10 +24,10 @@ int main(){
 	int num_pkt = 0;
 
 	// read .pcap and record brief info. in fp_pkt;  in the fromat of pktTuple
-	readTrace(fp_pcap, fp_epoch);
+	//readTrace(fp_pcap, fp_epoch);
 
 	int perEpoch =0;
-	for(perEpoch = 0; perEpoch < 10; perEpoch ++){
+	for(perEpoch = 0; perEpoch < 3; perEpoch ++){
 		struct pktTuple pkt;		// used to store pkt information read from fp_epoch;
 		char file_name[100];
 		sprintf(file_name, "./pkt_epoch/result_pkt_epoch_%d.txt", perEpoch);
